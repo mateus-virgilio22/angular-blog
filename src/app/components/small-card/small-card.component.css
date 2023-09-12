@@ -1,5 +1,5 @@
 .container__small-card {
-    width: 700px;
+    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -10,7 +10,7 @@
 
 .small-card__photo > img {
     width: 200px;
-    min-width: 200px;
+    min-width: 100px;
     max-height: 150px;
     margin-right: 20px;
 }
@@ -23,4 +23,20 @@
 
 .container__small-card__separator {
     margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .small-card__photo > img {
+        width: 150px;
+        padding: 10px;
+        margin-right: 5px;
+    }
+
+    .small-card__title > h1 > a {
+        font-size: 1rem;
+    }
+
+    .container__small-card-content {
+        align-items: center;
+    }
 }

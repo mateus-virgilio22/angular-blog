@@ -1,17 +1,15 @@
 .container__big-card {
-    width: 400px;
     height: 450px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .big-card__photo > img {
     width: 100%;
-    min-width: 400px;
 }
 
 .big-card__title > h1 {
@@ -19,6 +17,16 @@
     margin-top: 15px;
 }
 .big-card__description > p {
-    color: gray;
+    color: rgb(61, 61, 61);
     margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .big-card__photo {
+        display: flex;
+        justify-content: center;
+    }
+    .big-card__photo > img {
+        width: 90%;
+    }
 }
